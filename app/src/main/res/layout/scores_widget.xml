@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#1087b6"
+                android:gravity="center"
+                android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/homeTeam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="219dp"
+        android:layout_toLeftOf="@+id/homeScore" android:layout_toStartOf="@+id/homeScore"
+        android:text="@string/home" android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textSize="12dp" android:layout_marginRight="20dp" android:maxWidth="90dp"/>
+    <TextView
+        android:id="@+id/awayTeam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/away"
+        android:textAppearance="?android:attr/textAppearanceMedium" android:textSize="12dp"
+        android:layout_alignTop="@+id/homeTeam" android:layout_toRightOf="@+id/wDate"
+        android:layout_toEndOf="@+id/wDate" android:layout_marginRight="20dp"
+        android:maxWidth="90dp"/>
+    <TextView
+        android:id="@+id/homeScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/wDate"
+        android:layout_marginLeft="15dp"
+        android:layout_toLeftOf="@+id/wDate"
+        android:layout_toStartOf="@+id/wDate" android:text="@string/home_score"
+        android:textAppearance="?android:attr/textAppearanceSmall" android:textSize="12dp"/>
+    <TextView
+        android:id="@+id/awayScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:text="@string/away_score" android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textSize="12dp" android:layout_alignTop="@+id/awayTeam"
+        android:layout_toRightOf="@+id/awayTeam" android:layout_toEndOf="@+id/awayTeam"
+        android:layout_marginStart="30dp"/>
+    <TextView
+        android:id="@+id/wDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/awayTeam"
+        android:layout_alignLeft="@+id/wLeague"
+        android:layout_alignStart="@+id/wLeague"
+        android:text="@string/date" android:textAlignment="center"
+        android:textAppearance="?android:attr/textAppearanceMedium" android:textSize="12dp"/>
+    <TextView
+        android:id="@+id/wLeague"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/wDate"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:text="@string/league" android:textAlignment="center"
+        android:textSize="12dp"/>
+    <TextView android:id="@+id/homeTeam2" android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="@string/home" android:textAppearance="?android:attr/textAppearanceMedium"
+              android:textSize="12dp" android:layout_alignTop="@+id/homeScore2"
+              android:layout_alignLeft="@+id/homeTeam" android:layout_alignStart="@+id/homeTeam"
+              android:maxWidth="90dp"/>
+    <TextView android:id="@+id/awayTeam2" android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="@string/away" android:textAppearance="?android:attr/textAppearanceMedium"
+              android:textSize="12dp"
+              android:layout_below="@+id/wDate2" android:layout_alignLeft="@+id/awayTeam"
+              android:layout_alignStart="@+id/awayTeam" android:maxWidth="90dp"/>
+    <TextView android:id="@+id/homeScore2" android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="@string/home_score" android:textAppearance="?android:attr/textAppearanceSmall"
+              android:textSize="12dp" android:layout_alignTop="@+id/awayTeam2"
+              android:layout_toLeftOf="@+id/wDate2" android:layout_toStartOf="@+id/wDate2"
+              android:layout_marginLeft="15dp"/>
+    <TextView android:id="@+id/awayScore2" android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="@string/away_score" android:textAppearance="?android:attr/textAppearanceSmall"
+              android:textSize="12dp"
+              android:layout_alignTop="@+id/awayTeam2" android:layout_alignLeft="@+id/awayScore"
+              android:layout_alignStart="@+id/awayScore"/>
+    <TextView android:id="@+id/wDate2" android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="@string/date"
+              android:textAlignment="center" android:textAppearance="?android:attr/textAppearanceMedium"
+              android:textSize="12dp" android:layout_below="@+id/wLeague2"
+              android:layout_alignLeft="@+id/wLeague2" android:layout_alignStart="@+id/wLeague2"/>
+    <TextView android:id="@+id/wLeague2" android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="@string/league" android:textAlignment="center"
+              android:textSize="12dp"
+              android:layout_below="@+id/awayTeam" android:layout_toLeftOf="@+id/wDate3"
+              android:layout_toEndOf="@+id/homeScore"/>
+    <TextView android:id="@+id/wLeague3" android:layout_width="wrap_content"
+              android:layout_height="wrap_content" android:text="@string/league"
+              android:textAlignment="center" android:textSize="12dp"
+              android:layout_below="@+id/awayTeam2" android:layout_alignLeft="@+id/wDate2"
+              android:layout_alignStart="@+id/wDate3"/>
+    <TextView android:id="@+id/wDate3" android:layout_width="wrap_content"
+              android:layout_height="wrap_content" android:text="@string/date"
+              android:textAlignment="center"
+              android:textAppearance="?android:attr/textAppearanceMedium" android:textSize="12dp"
+              android:layout_below="@+id/wLeague3" android:layout_toLeftOf="@+id/awayTeam2"
+              android:layout_toStartOf="@+id/awayTeam2"/>
+    <TextView android:id="@+id/homeTeam3" android:layout_width="wrap_content"
+              android:layout_height="wrap_content" android:text="@string/home"
+              android:textAppearance="?android:attr/textAppearanceMedium" android:textSize="12dp"
+              android:layout_below="@+id/wDate3" android:layout_alignLeft="@+id/homeTeam2"
+              android:layout_alignStart="@+id/homeTeam2" android:layout_marginRight="10dp"
+              android:textAlignment="gravity" android:maxWidth="90dp"/>
+    <TextView android:id="@+id/homeScore3" android:layout_width="wrap_content"
+              android:layout_height="wrap_content" android:text="@string/home_score"
+              android:textAppearance="?android:attr/textAppearanceSmall" android:textSize="12dp"
+              android:layout_below="@+id/wDate3" android:layout_toLeftOf="@+id/wDate3"
+              android:layout_toStartOf="@+id/wDate3"/>
+    <TextView android:id="@+id/awayTeam3" android:layout_width="wrap_content"
+              android:layout_height="wrap_content" android:text="@string/away"
+              android:textAppearance="?android:attr/textAppearanceMedium" android:textSize="12dp"
+              android:layout_alignTop="@+id/homeScore3" android:layout_toRightOf="@+id/wDate3"
+              android:layout_toEndOf="@+id/wDate3" android:maxWidth="90dp"/>
+    <TextView android:id="@+id/awayScore3" android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="@string/away_score" android:textAppearance="?android:attr/textAppearanceSmall"
+              android:textSize="12dp"
+              android:layout_alignTop="@+id/awayTeam3" android:layout_alignLeft="@+id/awayScore2"
+              android:layout_alignStart="@+id/awayScore2"/>
+</RelativeLayout>
